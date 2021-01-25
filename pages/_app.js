@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
         <meta name="description" content="Learn Quiz - description...." />
         <link rel="icon" type="image/png" sizes="16x16" href="image/icon.png" />
         <title>{db.title}</title>
-        <meta property="og:image" content={db.bg} />
+        <meta property="og:image" content={db.bgog} />
         <meta property="og:title" content={db.title} />
         <meta property="og:description" content={db.description} />
       </Head>
