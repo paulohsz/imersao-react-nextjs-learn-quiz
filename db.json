@@ -1,6 +1,6 @@
 {
     "bg": "/image/chaves.jpg",
-    "bgog": "https://imersao-react-nextjs-learn-quiz.paulohsz.vercel.app/image/og-image.jpg",
+    "bgog": "https://imersao-react-nextjs-learn-quiz.paulohsz.vercel.app/image/og-image.png",
     "title": "Quiz CSS da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
