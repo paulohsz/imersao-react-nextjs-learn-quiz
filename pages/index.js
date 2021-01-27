@@ -10,7 +10,14 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import Button from '../src/components/Button';
 import Input from '../src/components/Input';
 
-export const QuizContainer = styled.div`
+// const BackgroundImage = styled.div`
+//   background-image: url(${db.bg});
+//   flex: 1;
+//   background-size: cover;
+//   background-position: center;
+// `;
+
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -34,19 +41,20 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                router.push(`/quiz?name=${name}`);
-                console.log(e);
-              }}
+            <form onSubmit={(e) => {
+              e.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Fazendo uma submissão por meio do react');
+            }}
             >
               <Input
                 onChange={(e) => { setName(e.target.value); }}
                 placeholder="Qual é o seu nome?"
+                name="nameUser"
+                value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
-                Start
+                {`Jogar ${name}`}
               </Button>
             </form>
           </Widget.Content>
